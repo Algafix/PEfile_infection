@@ -1,8 +1,9 @@
 #pragma once
 
-namespace PE 
+namespace PE
 {
-	struct PE_FILE {
+	struct PE_FILE
+	{
 		size_t size_ids{};
 		size_t size_dos_stub{};
 		size_t size_inh32{};
@@ -15,9 +16,8 @@ namespace PE
 		std::vector<std::shared_ptr<char>> Sections;
 		void set_sizes(size_t, size_t, size_t, size_t, size_t);
 	};
-	
+
 	std::tuple<bool, char*, std::streampos> OpenBinary(std::string filename);
 	PE_FILE ParsePE(const char* PE);
 	void WriteBinary(PE_FILE pefile, std::string file_name, size_t size);
 }
-
