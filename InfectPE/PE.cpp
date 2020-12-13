@@ -86,7 +86,7 @@ namespace PE
 
 	void WriteBinary(PE_FILE pefile, std::string file_name, size_t size)
 	{
-		// TODO: recompute checksum value
+		
 		pefile.inh32.OptionalHeader.CheckSum = 0;
 
 		auto r_ch = new char[size] {};
