@@ -7,14 +7,8 @@
 #include "PE.h"
 #include <bitset>
 #include <sstream>
+
 using namespace std;
-
-constexpr std::size_t
-align_up(std::size_t value, std::size_t alignment) noexcept
-{
-	return (value + alignment - 1) & ~(alignment - 1);
-}
-
 
 namespace PE
 {

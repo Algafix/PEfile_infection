@@ -113,7 +113,7 @@ int main(int argc, char *argv[])
 	
 	//char fileToInfect[] = "C:\\Windows\\System32\\mspaint.exe";
 	char file_to_infect[] = "putty.exe";
-	char new_name[] = "putty_aleix.exe";
+	char new_name[] = "putty_aleix_git.exe";
 
 	//auto outfile = argv[2];
 	//auto infile = argv[1];
