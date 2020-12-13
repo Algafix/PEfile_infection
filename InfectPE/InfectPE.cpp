@@ -35,7 +35,7 @@ void Inject_New_Section(char* pe_file, size_t size_of_pe, char xcode[], size_t s
 	char push[] = "\x68"; // push
 	char esp[] = "\xff\x24\x24"; // jmp [esp]
 	char hex_oep[] = { image_base_OEP >> 0 & 0xFF, image_base_OEP >> 8 & 0xFF, image_base_OEP >> 16 & 0xFF, image_base_OEP >> 24 & 0xFF }; // OEP
-	auto inj_size = sizeof push + sizeof esp + sizeof hex_oep + size_of_xcode - 3; // -3 for the end teminator \0, hex_oep doen't have it because its defined char by char.
+	auto inj_size = sizeof push + sizeof esp + sizeof hex_oep + size_of_xcode - 3; // -3 for the end teminator \0, hex_oep doens't have it as its defined char by char.
 
 	// ------------- Construction of Image Section Headers -----------------
 

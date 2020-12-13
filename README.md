@@ -1,3 +1,6 @@
 ## Malware PE file infection
 
-Compile only the 32 bits version (x86). It will only work with 32 bits applications.
+It will only work with 32 bits applications.
+Windows SDK Version 10.0
+Toolset VS2019(v142)
+ISO C++17
