@@ -108,7 +108,7 @@ namespace PE
 
 		ofstream ofile(file_name, ios::binary | ios::out);
 		ofile.write(r_ch, size);
-		MessageBoxA(NULL, "Infected", "Debug", MB_OK);
+		//MessageBoxA(NULL, "Infected", "Debug", MB_OK);
 		std::cout << "\nEOF\n" << endl;
 		ofile.close();
 	}
